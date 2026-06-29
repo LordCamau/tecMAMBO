@@ -10,21 +10,25 @@ export type ContrastPair = {
 };
 
 export const contrastColors = {
-  brandPurple: "#6A00FF",
-  brandPurpleDark: "#4A0099",
+  brandPurple: "#4C1FC4",
+  brandPurpleMid: "#3F18A8",
+  brandPurpleDark: "#2E1568",
+  spark: "#6E2BFF",
+  darkPurple: "#9A78FF",
+  darkPurpleStrong: "#B6A2FF",
+  darkSpark: "#8A5BFF",
   brandOrange: "#FF8A00",
+  darkOrange: "#FFA033",
   brandInk: "#1A1A1F",
   onOrange: "#281400",
   white: "#FFFFFF",
-  lavender: "#F4F2FA",
-  lavenderLine: "#E2DCF4",
+  lavender: "#F3F0FB",
+  lavenderLine: "#E4DEF6",
   darkBg: "#141318",
   darkSurface: "#1C1B22",
   darkRaised: "#201F27",
-  darkPill: "#211B33",
-  darkPillBorder: "#2E2747",
-  darkOutline: "#7A4DCC",
-  purpleLight: "#B79BFF",
+  darkPill: "#211B3A",
+  darkPillBorder: "#2F2752",
   lightBg: "#FAFAFC",
   lightSurface: "#FFFFFF",
   text: "#1A1A1F",
@@ -33,7 +37,8 @@ export const contrastColors = {
   darkText: "#ECEAF2",
   darkTextSecondary: "#B9B7C4",
   darkTextMuted: "#8C8A98",
-  footer: "#4A0099"
+  footer: "#2E1568",
+  footerDark: "#0D0C10"
 } as const;
 
 const c = contrastColors;
@@ -48,9 +53,9 @@ export const contrastPairs: ContrastPair[] = [
   { name: "badge wallet", theme: "light", fg: c.onOrange, bg: c.brandOrange, size: "normal" },
   { name: "badge wallet", theme: "dark", fg: c.onOrange, bg: c.brandOrange, size: "normal" },
   { name: "badge take", theme: "light", fg: c.brandPurpleDark, bg: c.lightBg, size: "normal" },
-  { name: "badge take", theme: "dark", fg: c.purpleLight, bg: c.darkBg, size: "normal" },
+  { name: "badge take", theme: "dark", fg: c.darkPurpleStrong, bg: c.darkBg, size: "normal" },
   { name: "badge review", theme: "light", fg: c.brandPurpleDark, bg: c.lavender, size: "normal" },
-  { name: "badge review", theme: "dark", fg: c.purpleLight, bg: c.darkPill, size: "normal" },
+  { name: "badge review", theme: "dark", fg: c.darkPurpleStrong, bg: c.darkPill, size: "normal" },
   { name: "orange price pill", theme: "light", fg: c.onOrange, bg: c.brandOrange, size: "normal" },
   { name: "orange price pill", theme: "dark", fg: c.onOrange, bg: c.brandOrange, size: "normal" },
   { name: "accent button", theme: "light", fg: c.onOrange, bg: c.brandOrange, size: "normal" },
@@ -58,23 +63,25 @@ export const contrastPairs: ContrastPair[] = [
   { name: "primary button", theme: "light", fg: c.white, bg: c.brandPurple, size: "normal" },
   { name: "primary button", theme: "dark", fg: c.white, bg: c.brandPurple, size: "normal" },
   { name: "glossary and tag pill", theme: "light", fg: c.brandPurpleDark, bg: c.lavender, size: "normal" },
-  { name: "glossary and tag pill", theme: "dark", fg: c.purpleLight, bg: c.darkPill, size: "normal" },
+  { name: "glossary and tag pill", theme: "dark", fg: c.darkPurpleStrong, bg: c.darkPill, size: "normal" },
   { name: "newsletter card", theme: "light", fg: c.white, bg: c.brandPurple, size: "normal" },
   { name: "newsletter card", theme: "dark", fg: c.white, bg: c.brandPurple, size: "normal" },
   { name: "footer text", theme: "light", fg: c.white, bg: c.footer, size: "normal" },
-  { name: "footer text", theme: "dark", fg: c.white, bg: c.footer, size: "normal" },
+  { name: "footer text", theme: "dark", fg: c.white, bg: c.footerDark, size: "normal" },
   { name: "why it matters heading", theme: "light", fg: c.brandPurpleDark, bg: c.lavender, size: "normal" },
-  { name: "why it matters heading", theme: "dark", fg: c.purpleLight, bg: c.darkPill, size: "normal" },
+  { name: "why it matters heading", theme: "dark", fg: c.darkPurpleStrong, bg: c.darkPill, size: "normal" },
   { name: "glossary peek link", theme: "light", fg: c.brandPurpleDark, bg: c.lightSurface, size: "normal" },
-  { name: "glossary peek link", theme: "dark", fg: c.purpleLight, bg: c.darkSurface, size: "normal" },
+  { name: "glossary peek link", theme: "dark", fg: c.darkPurpleStrong, bg: c.darkSurface, size: "normal" },
   { name: "secondary text on surface", theme: "light", fg: c.textSecondary, bg: c.lightSurface, size: "normal" },
   { name: "secondary text on surface", theme: "dark", fg: c.darkTextSecondary, bg: c.darkSurface, size: "normal" },
   { name: "muted byline on page", theme: "light", fg: c.textMuted, bg: c.lightBg, size: "normal" },
   { name: "muted byline on page", theme: "dark", fg: c.darkTextMuted, bg: c.darkBg, size: "normal" },
   { name: "mono eyebrow", theme: "light", fg: c.brandPurpleDark, bg: c.lightBg, size: "normal" },
-  { name: "mono eyebrow", theme: "dark", fg: c.purpleLight, bg: c.darkBg, size: "normal" },
+  { name: "mono eyebrow", theme: "dark", fg: c.darkPurpleStrong, bg: c.darkBg, size: "normal" },
   { name: "nav active", theme: "light", fg: c.brandPurpleDark, bg: c.lightBg, size: "normal" },
-  { name: "nav active", theme: "dark", fg: c.purpleLight, bg: c.darkBg, size: "normal" }
+  { name: "nav active", theme: "dark", fg: c.darkPurpleStrong, bg: c.darkBg, size: "normal" },
+  { name: "dark brand link", theme: "dark", fg: c.darkPurple, bg: c.darkBg, size: "normal" },
+  { name: "dark brand link hover", theme: "dark", fg: c.darkPurpleStrong, bg: c.darkBg, size: "normal" }
 ];
 
 export function contrastRatio(foreground: string, background: string) {

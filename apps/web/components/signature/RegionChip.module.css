@@ -28,7 +28,7 @@
 :global(.dark) .chip {
   border-color: color-mix(in srgb, var(--purple) 65%, var(--line));
   background: color-mix(in srgb, var(--purple) 24%, var(--surface));
-  color: #f0e6ff;
+  color: var(--purple-strong);
 }
 
 :global(.dark) .chip:hover {

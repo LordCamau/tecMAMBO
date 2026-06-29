@@ -242,7 +242,7 @@
   display: grid;
   gap: 14px;
   border-radius: var(--radius-md);
-  background: #4a0099;
+  background: var(--brand-purple-dark);
   color: var(--white);
   padding: 34px;
 }
@@ -263,7 +263,7 @@
   border: 1px solid rgba(255, 255, 255, 0.26);
   border-radius: var(--radius-sm);
   background: var(--white);
-  color: #4a0099;
+  color: var(--brand-purple-dark);
   padding: 10px 13px;
   font-family: var(--font-display), system-ui, sans-serif;
   font-weight: 500;

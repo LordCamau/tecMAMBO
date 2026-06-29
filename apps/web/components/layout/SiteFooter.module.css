@@ -1,11 +1,11 @@
 .footer {
   margin-top: 88px;
-  background: #161519;
-  color: #f4f2fa;
+  background: var(--footer-bg);
+  color: var(--footer-fg);
 }
 
 :global(.dark) .footer {
-  background: #0d0c10;
+  background: var(--footer-bg-dark);
 }
 
 .accent {
@@ -46,7 +46,7 @@
 }
 
 .tagline {
-  color: #ffffff;
+  color: var(--white);
   font-family: var(--font-display), system-ui, sans-serif;
   font-size: 19px;
   font-weight: 500;
@@ -54,7 +54,7 @@
 
 .mission {
   max-width: 330px;
-  color: rgba(244, 242, 250, 0.78);
+  color: var(--footer-muted);
   line-height: 1.58;
 }
 
@@ -70,10 +70,10 @@
   place-items: center;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(244, 242, 250, 0.18);
+  border: 1px solid var(--footer-line);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.04);
-  color: #f4f2fa;
+  color: var(--footer-fg);
   transition:
     border-color 160ms ease,
     color 160ms ease,
@@ -82,8 +82,8 @@
 
 .socials a:hover,
 .socials a:focus-visible {
-  border-color: var(--brand-purple);
-  color: #d6c8ff;
+  border-color: var(--footer-accent);
+  color: var(--footer-accent);
   transform: translateY(-2px);
 }
 
@@ -106,7 +106,7 @@
 .linkColumn h2,
 .eyebrow {
   margin: 0;
-  color: #d6c8ff;
+  color: var(--footer-accent);
   font-family: var(--font-mono), ui-monospace, monospace;
   font-size: 12px;
   font-weight: 700;
@@ -124,7 +124,7 @@
 .linkColumn a,
 .privacyNote a,
 .utilityLinks a {
-  color: rgba(244, 242, 250, 0.82);
+  color: var(--footer-link);
   font-family: var(--font-display), system-ui, sans-serif;
   font-weight: 500;
 }
@@ -132,12 +132,12 @@
 .linkColumn a:hover,
 .privacyNote a:hover,
 .utilityLinks a:hover {
-  color: #ffffff;
+  color: var(--footer-link-hover);
 }
 
 .newsletter {
   gap: 12px;
-  border: 1px solid rgba(244, 242, 250, 0.16);
+  border: 1px solid var(--footer-line);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.045);
   padding: 20px;
@@ -145,7 +145,7 @@
 
 .newsletter h2 {
   margin: 0;
-  color: #ffffff;
+  color: var(--white);
   font-family: var(--font-display), system-ui, sans-serif;
   font-size: 24px;
   font-weight: 500;
@@ -153,7 +153,7 @@
 }
 
 .newsletter > p:not(.eyebrow):not(.privacyNote) {
-  color: rgba(244, 242, 250, 0.78);
+  color: var(--footer-muted);
 }
 
 .form {
@@ -172,8 +172,8 @@
 
 .form input {
   min-width: 0;
-  border: 1px solid rgba(244, 242, 250, 0.18);
-  background: #ffffff;
+  border: 1px solid var(--footer-line);
+  background: var(--white);
   color: var(--ink);
   padding: 0 12px;
 }
@@ -189,7 +189,7 @@
 }
 
 .privacyNote {
-  color: rgba(244, 242, 250, 0.68);
+  color: var(--footer-subtle);
   font-size: 13px;
   line-height: 1.45;
 }
@@ -201,9 +201,9 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 44px;
-  border-top: 1px solid rgba(244, 242, 250, 0.16);
+  border-top: 1px solid var(--footer-line);
   padding-top: 20px;
-  color: rgba(244, 242, 250, 0.72);
+  color: var(--footer-subtle);
   font-size: 13px;
 }
 
