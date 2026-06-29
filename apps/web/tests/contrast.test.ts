@@ -36,4 +36,15 @@ describe("text-on-colour contrast tokens", () => {
 
     expect(whiteOnOrange).toEqual([]);
   });
+
+  it("covers approved gradient text surfaces at their lightest tested point", () => {
+    expect(contrastPairs).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ name: "newsletter gradient lightest stop", theme: "light", fg: contrastColors.white, bg: contrastColors.spark }),
+        expect.objectContaining({ name: "newsletter gradient lightest stop", theme: "dark", fg: contrastColors.white, bg: contrastColors.spark }),
+        expect.objectContaining({ name: "og aurora scrim worst stop", theme: "light", fg: contrastColors.white, bg: contrastColors.ogScrimOverAuroraCyan }),
+        expect.objectContaining({ name: "og aurora scrim worst stop", theme: "dark", fg: contrastColors.white, bg: contrastColors.ogScrimOverAuroraCyan })
+      ])
+    );
+  });
 });

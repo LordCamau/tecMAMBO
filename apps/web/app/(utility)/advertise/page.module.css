@@ -141,9 +141,7 @@
   flex-direction: column;
   justify-content: end;
   padding: 28px;
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--brand-purple) 16%, transparent), transparent 54%),
-    var(--surface);
+  background: color-mix(in srgb, var(--surface) 92%, var(--brand-purple) 8%);
 }
 
 .heroPanel svg {
@@ -337,9 +335,7 @@
 
 .partnerInvite {
   width: min(100% - 32px, 1250px);
-  background:
-    linear-gradient(135deg, color-mix(in srgb, var(--brand-purple) 18%, transparent), transparent 62%),
-    var(--surface);
+  background: color-mix(in srgb, var(--surface) 92%, var(--brand-purple) 8%);
 }
 
 .partnerInvite p:last-child {

@@ -43,7 +43,7 @@ export function assertNoEditorialTodos(articles: Article[]) {
 }
 
 export function assertArticlesArePublishable(articles: Article[]) {
-  const emDashPattern = /—|&mdash;|&#8212;|&#x2014;/i;
+  const emDashPattern = /\u2014|&mdash;|&#8212;|&#x2014;/i;
   const wrongBrandPattern = /\b(?:Tecmambo|TecMAMBO|TECMAMBO|tecmambo)\b/g;
   const failures = articles.flatMap((article) => {
     const text = renderedArticleFields(article).join("\n");
@@ -61,7 +61,7 @@ export function assertArticlesArePublishable(articles: Article[]) {
 }
 
 export function assertLegalPagesArePublishable(pages: LegalPage[]) {
-  const emDashPattern = /—|&mdash;|&#8212;|&#x2014;/i;
+  const emDashPattern = /\u2014|&mdash;|&#8212;|&#x2014;/i;
   const wrongBrandPattern = /\b(?:Tecmambo|TecMAMBO|TECMAMBO|tecmambo)\b/g;
   const failures = pages.flatMap((page) => {
     const text = legalPageText(page);
@@ -106,7 +106,7 @@ export function renderedAdvertiseFields(settings: AdvertiseSettings) {
 }
 
 export function assertAdvertisePageIsPublishable(settings: AdvertiseSettings) {
-  const emDashPattern = /—|&mdash;|&#8212;|&#x2014;/i;
+  const emDashPattern = /\u2014|&mdash;|&#8212;|&#x2014;/i;
   const wrongBrandPattern = /\b(?:Tecmambo|TecMAMBO|TECMAMBO|tecmambo)\b/g;
   const text = renderedAdvertiseFields(settings).join("\n");
   const issues: string[] = [];

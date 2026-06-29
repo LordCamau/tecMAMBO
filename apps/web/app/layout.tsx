@@ -41,14 +41,14 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/brand/tecMAMBO-favicon.png",
-        type: "image/png"
+        url: "/brand/tecMAMBO-favicon.jpg",
+        type: "image/jpeg"
       }
     ],
     apple: [
       {
-        url: "/brand/tecMAMBO-favicon.png",
-        type: "image/png"
+        url: "/brand/tecMAMBO-favicon.jpg",
+        type: "image/jpeg"
       }
     ]
   },

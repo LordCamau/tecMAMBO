@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description:
       "We're the tech publication for everyone the other tech sites forgot to write for, without boring the people who already love this stuff.",
     url: "/about",
-    images: [{ url: "/brand/tecMAMBO-favicon.png", alt: "tecMAMBO" }]
+    images: [{ url: "/brand/tecMAMBO-favicon.jpg", alt: "tecMAMBO" }]
   },
   twitter: {
     card: "summary_large_image",

@@ -7,6 +7,10 @@
   --brand-orange: #FF8A00;
   --brand-orange-deep: #E97D00;
   --brand-ink: #1A1A1F;
+  --gradient-deep: linear-gradient(135deg, #4C1FC4 0%, #6E2BFF 100%);
+  --gradient-aurora: linear-gradient(135deg, #4C1FC4 0%, #6E2BFF 45%, #2BD4E6 100%);
+  --gradient-spectrum: linear-gradient(135deg, #4C1FC4 0%, #B23CE6 55%, #FF6FAE 100%);
+  --gradient-fallback: var(--brand-purple);
   --on-brand-purple: #FFFFFF;
   --on-brand-purple-dark: #FFFFFF;
   --on-brand-orange: #281400;
@@ -109,6 +113,10 @@
   --spark: #8A5BFF;
   --orange: #FFA033;
   --orange-deep: #FFB661;
+  --gradient-deep: linear-gradient(135deg, #4C1FC4 0%, #6E2BFF 100%);
+  --gradient-aurora: linear-gradient(135deg, #4C1FC4 0%, #6E2BFF 45%, #2BD4E6 100%);
+  --gradient-spectrum: linear-gradient(135deg, #4C1FC4 0%, #B23CE6 55%, #FF6FAE 100%);
+  --gradient-fallback: var(--brand-purple);
   --badge-take-fg: #B6A2FF;
   --badge-take-border: #8A5BFF;
   --badge-review-bg: #211B3A;

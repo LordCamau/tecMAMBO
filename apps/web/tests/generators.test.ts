@@ -29,7 +29,12 @@ describe("content generators", () => {
   });
 
   it("builds Google News sitemap XML", () => {
-    const sitemap = buildGoogleNewsSitemap(articles);
+    const sitemap = buildGoogleNewsSitemap([
+      {
+        ...articles[0]!,
+        publishedAt: new Date().toISOString()
+      }
+    ]);
     expect(sitemap).toContain("xmlns:news");
     expect(sitemap).toContain("<news:publication>");
   });

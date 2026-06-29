@@ -9,8 +9,9 @@
 }
 
 .accent {
-  height: 4px;
-  background: linear-gradient(90deg, var(--brand-purple), var(--brand-orange));
+  height: 3px;
+  background-color: var(--gradient-fallback);
+  background-image: var(--gradient-deep);
 }
 
 .inner {

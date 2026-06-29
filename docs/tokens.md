@@ -11,6 +11,15 @@
 - Filled MAMBO Explains badges use `#4C1FC4` with white text in both themes; MAMBO vs Real Life uses `#2E1568` with white text; Wallet Watch uses orange with dark ink.
 - Lavender tint surfaces are now `#F3F0FB` with `#E4DEF6` hairlines to match the deeper violet family.
 - The dark Why it matters surface is `#211B3A`, its border is `#2F2752`, and its label is `#B6A2FF`.
+- Brand gradients are governed tokens, not one-off CSS:
+  - `--gradient-deep`: `linear-gradient(135deg, #4C1FC4 0%, #6E2BFF 100%)`
+  - `--gradient-aurora`: `linear-gradient(135deg, #4C1FC4 0%, #6E2BFF 45%, #2BD4E6 100%)`
+  - `--gradient-spectrum`: `linear-gradient(135deg, #4C1FC4 0%, #B23CE6 55%, #FF6FAE 100%)`
+  - `--gradient-fallback`: `#4C1FC4`
+- Use gradients only as rare brand finishes: OG and social share images, the newsletter card, a thin 3px keyline, subtle loading or progress states, or one chosen hero or brand accent.
+- Do not use gradients behind article body copy, as default page or section backgrounds, on standard buttons, as body text fills, or in stacked moments on the same view.
+- White text on `--gradient-deep` is tested against the lightest purple stop. Aurora and Spectrum need dark placement or a scrim before text, because cyan and pink stops do not pass AA with white text by themselves.
+- OG share images use `--gradient-aurora` with a dark scrim under the wordmark and headline. Dynamic generation is suited to Vercel or another Node or edge host; shared hosting should use a pregenerated static fallback if resource limits become a concern.
 - Light-mode muted grey is `#72727B` so byline and secondary metadata pass AA on the off-white page background.
 - Headlines use sentence case.
 - Mono type is reserved for labels, tags, specs, and compact metadata.

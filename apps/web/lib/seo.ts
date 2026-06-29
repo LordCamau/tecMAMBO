@@ -43,7 +43,7 @@ export function organizationJsonLd(): WithContext<NewsMediaOrganization> {
       addressLocality: "Nairobi",
       addressCountry: "KE"
     },
-    logo: absoluteUrl("/brand/tecMAMBO-favicon.png"),
+    logo: absoluteUrl("/brand/tecMAMBO-favicon.jpg"),
     ethicsPolicy: editorialStandardsUrl,
     correctionsPolicy: `${editorialStandardsUrl}#corrections-updates`,
     verificationFactCheckingPolicy: `${editorialStandardsUrl}#accuracy-verification-fact-checking`,
