@@ -13,6 +13,6 @@
     "test": "npm --workspace apps/web run test"
   },
   "engines": {
-    "node": ">=22"
+    "node": "22.x"
   }
 }
