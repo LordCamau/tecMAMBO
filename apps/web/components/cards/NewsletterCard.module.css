@@ -1,0 +1,63 @@
+.card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: start;
+  border-radius: var(--radius-md);
+  background: var(--brand-purple);
+  color: var(--on-brand-purple);
+  padding: 24px;
+}
+
+.kicker {
+  margin: 0 0 4px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.card h2 {
+  margin: 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.card p {
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.form {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.form input,
+.form button {
+  min-height: 44px;
+  border-radius: var(--radius-sm);
+  border: 0;
+  padding: 0 12px;
+}
+
+.form input {
+  background: var(--white);
+  color: var(--ink);
+}
+
+.form button {
+  cursor: pointer;
+  background: var(--button-accent-bg);
+  color: var(--button-accent-fg);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

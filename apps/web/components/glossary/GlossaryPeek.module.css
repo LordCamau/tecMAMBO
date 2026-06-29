@@ -1,0 +1,101 @@
+.wrapper {
+  position: relative;
+  display: inline;
+}
+
+.trigger {
+  display: inline;
+  border: 0;
+  border-bottom: 2px dotted var(--purple);
+  background: transparent;
+  color: var(--purple-dark);
+  padding: 0;
+  cursor: help;
+  font: inherit;
+  text-align: inherit;
+}
+
+.trigger:focus-visible {
+  border-radius: 3px;
+}
+
+.popover {
+  position: absolute;
+  z-index: 50;
+  bottom: calc(100% + 10px);
+  left: 0;
+  display: grid;
+  gap: 8px;
+  width: min(320px, calc(100vw - 40px));
+  border: 1px solid var(--why-border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--text);
+  padding: 14px;
+  box-shadow: var(--shadow-hover);
+}
+
+.popover::after {
+  position: absolute;
+  bottom: -7px;
+  left: 18px;
+  width: 12px;
+  height: 12px;
+  border-right: 1px solid var(--why-border);
+  border-bottom: 1px solid var(--why-border);
+  background: var(--surface);
+  content: "";
+  transform: rotate(45deg);
+}
+
+.popover strong {
+  color: var(--purple-dark);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.popover span,
+.popover em {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.popover em {
+  font-style: normal;
+}
+
+.popover a {
+  color: var(--purple-dark);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 520px) {
+  .popover {
+    position: fixed;
+    inset: auto 16px 24px;
+    width: auto;
+  }
+
+  .popover::after {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .popover {
+    animation: fade 140ms ease;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

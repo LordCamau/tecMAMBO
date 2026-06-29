@@ -1,0 +1,5 @@
+# Cookie Policy
+
+Last updated: April 15, 2026
+
+The short version summary and the numbered body are seeded in `apps/web/lib/legal-pages.ts`. Copy that source into the Legal Page CPT entry for `/cookies`, connect the consent management platform, and complete the placeholders listed in `docs/legal-pages.md` after legal and data-protection review.

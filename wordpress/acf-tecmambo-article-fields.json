@@ -1,0 +1,135 @@
+[
+  {
+    "key": "group_tecmambo_article",
+    "title": "tecMAMBO Article Fields",
+    "show_in_graphql": true,
+    "graphql_field_name": "articleFields",
+    "fields": [
+      {
+        "key": "field_subhead",
+        "label": "Subhead",
+        "name": "subhead",
+        "type": "text"
+      },
+      {
+        "key": "field_why_it_matters",
+        "label": "Why it matters",
+        "name": "why_it_matters",
+        "type": "textarea",
+        "required": 1,
+        "instructions": "One or two plain-English sentences explaining what changes for the reader."
+      },
+      {
+        "key": "field_image_credit",
+        "label": "Image credit",
+        "name": "image_credit",
+        "type": "text"
+      },
+      {
+        "key": "field_read_time",
+        "label": "Read time",
+        "name": "read_time",
+        "type": "text"
+      },
+      {
+        "key": "field_go_deeper",
+        "label": "Go deeper",
+        "name": "go_deeper",
+        "type": "group",
+        "sub_fields": [
+          {
+            "key": "field_go_deeper_intro",
+            "label": "Intro",
+            "name": "intro",
+            "type": "wysiwyg"
+          },
+          {
+            "key": "field_spec_table",
+            "label": "Spec table",
+            "name": "spec_table",
+            "type": "repeater",
+            "sub_fields": [
+              { "key": "field_spec_label", "label": "Label", "name": "label", "type": "text" },
+              { "key": "field_spec_value", "label": "Value", "name": "value", "type": "text" }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "field_verdict",
+        "label": "Verdict",
+        "name": "verdict",
+        "type": "group",
+        "sub_fields": [
+          { "key": "field_verdict_score", "label": "Score", "name": "score", "type": "text" },
+          { "key": "field_verdict_summary", "label": "Summary", "name": "summary", "type": "text" },
+          {
+            "key": "field_verdict_pros",
+            "label": "Pros",
+            "name": "pros",
+            "type": "repeater",
+            "sub_fields": [{ "key": "field_verdict_pro_item", "label": "Item", "name": "item", "type": "text" }]
+          },
+          {
+            "key": "field_verdict_cons",
+            "label": "Cons",
+            "name": "cons",
+            "type": "repeater",
+            "sub_fields": [{ "key": "field_verdict_con_item", "label": "Item", "name": "item", "type": "text" }]
+          }
+        ]
+      },
+      {
+        "key": "field_sponsored",
+        "label": "Sponsored",
+        "name": "sponsored",
+        "type": "true_false"
+      },
+      {
+        "key": "field_deal",
+        "label": "Deal",
+        "name": "deal",
+        "type": "group",
+        "instructions": "Wallet Watch only. Product/Offer schema renders only when verified is true.",
+        "sub_fields": [
+          { "key": "field_deal_product_name", "label": "Product name", "name": "product_name", "type": "text" },
+          { "key": "field_deal_retailer", "label": "Retailer", "name": "retailer", "type": "text" },
+          { "key": "field_deal_price_current", "label": "Current price", "name": "price_current", "type": "number" },
+          { "key": "field_deal_price_was", "label": "Was price", "name": "price_was", "type": "number" },
+          { "key": "field_deal_currency", "label": "Currency", "name": "currency", "type": "select", "choices": { "KSh": "KSh", "USD": "USD" }, "default_value": "KSh" },
+          { "key": "field_deal_discount_pct", "label": "Discount percent", "name": "discount_pct", "type": "number" },
+          { "key": "field_deal_affiliate_url", "label": "Affiliate URL", "name": "affiliate_url", "type": "url" },
+          { "key": "field_deal_expiry", "label": "Deal expiry", "name": "deal_expiry", "type": "date_picker" },
+          { "key": "field_deal_best_under", "label": "Best under threshold", "name": "best_under_threshold", "type": "number" },
+          { "key": "field_deal_verified", "label": "Editor verified", "name": "verified", "type": "true_false" }
+        ]
+      },
+      {
+        "key": "field_faqs",
+        "label": "FAQs",
+        "name": "faqs",
+        "type": "repeater",
+        "sub_fields": [
+          { "key": "field_faq_question", "label": "Question", "name": "question", "type": "text" },
+          { "key": "field_faq_answer", "label": "Answer", "name": "answer", "type": "textarea" }
+        ]
+      },
+      {
+        "key": "field_closing_line",
+        "label": "Closing line",
+        "name": "closing_line",
+        "type": "textarea"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "post"
+        }
+      ]
+    ],
+    "active": true
+  }
+]

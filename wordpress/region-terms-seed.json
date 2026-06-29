@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Africa",
+    "slug": "africa",
+    "taxonomy": "region",
+    "parent": null,
+    "region_group": "Africa",
+    "region_description": "Continental grouping for African country Region terms."
+  },
+  {
+    "name": "Kenya",
+    "slug": "kenya",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "KE",
+    "region_description": "Kenya tech stories, from Nairobi startups and AI policy to the way people actually use phones, apps, and connectivity."
+  },
+  {
+    "name": "Nigeria",
+    "slug": "nigeria",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "NG",
+    "region_description": "Nigeria tech coverage across fintech, startups, phones, creators, and the digital services people use every day."
+  },
+  {
+    "name": "South Africa",
+    "slug": "south-africa",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "ZA",
+    "region_description": "South Africa tech stories across power, connectivity, enterprise tools, devices, and the products shaped by real infrastructure."
+  },
+  {
+    "name": "Rwanda",
+    "slug": "rwanda",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "RW",
+    "region_description": "Rwanda tech coverage, including digital public services, logistics, connectivity, and policy experiments worth watching."
+  },
+  {
+    "name": "Ghana",
+    "slug": "ghana",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "GH"
+  },
+  {
+    "name": "Egypt",
+    "slug": "egypt",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "EG"
+  },
+  {
+    "name": "Ethiopia",
+    "slug": "ethiopia",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "ET"
+  },
+  {
+    "name": "Tanzania",
+    "slug": "tanzania",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "TZ"
+  },
+  {
+    "name": "Uganda",
+    "slug": "uganda",
+    "taxonomy": "region",
+    "parent": "africa",
+    "region_group": "Africa",
+    "region_flag": "UG"
+  }
+]

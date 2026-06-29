@@ -1,0 +1,87 @@
+.card {
+  overflow: clip;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  box-shadow: var(--shadow-soft);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.media {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--surface-raised);
+}
+
+.media img {
+  object-fit: cover;
+  transition: transform 240ms ease;
+}
+
+.card:hover .media img {
+  transform: scale(1.035);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.body {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+}
+
+.body h3 {
+  margin: 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.body p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.dealPrice {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+  margin-top: 12px;
+}
+
+.dealPrice span {
+  border-radius: 999px;
+  background: var(--price-bg);
+  color: var(--price-fg);
+  padding: 5px 9px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.dealPrice del {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: var(--text-muted);
+  font-size: 13px;
+}

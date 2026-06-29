@@ -1,0 +1,51 @@
+[
+  {
+    "key": "group_tecmambo_site_settings",
+    "title": "tecMAMBO Site Settings",
+    "show_in_graphql": true,
+    "graphql_field_name": "siteSettingsFields",
+    "fields": [
+      {
+        "key": "field_site_social_facebook",
+        "label": "Facebook URL",
+        "name": "social_facebook",
+        "type": "url"
+      },
+      {
+        "key": "field_site_social_instagram",
+        "label": "Instagram URL",
+        "name": "social_instagram",
+        "type": "url"
+      },
+      {
+        "key": "field_site_social_youtube",
+        "label": "YouTube URL",
+        "name": "social_youtube",
+        "type": "url"
+      },
+      {
+        "key": "field_site_social_x",
+        "label": "Twitter / X URL",
+        "name": "social_x",
+        "type": "url"
+      },
+      {
+        "key": "field_site_social_tiktok",
+        "label": "TikTok URL",
+        "name": "social_tiktok",
+        "type": "url"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "options_page",
+          "operator": "==",
+          "value": "tecmambo-site-settings"
+        }
+      ]
+    ],
+    "active": true,
+    "show_in_graphql": true
+  }
+]

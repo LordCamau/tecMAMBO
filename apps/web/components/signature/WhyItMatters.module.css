@@ -1,0 +1,33 @@
+.callout {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  border: 1px solid var(--why-border);
+  border-radius: var(--radius-md);
+  background: var(--why-bg);
+  padding: 18px;
+  color: var(--text);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--why-heading);
+}
+
+.label {
+  margin: 0 0 4px;
+  color: var(--why-heading);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.copy {
+  margin: 0;
+  color: var(--text-secondary);
+}

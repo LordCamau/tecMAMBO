@@ -1,0 +1,83 @@
+[
+  {
+    "key": "group_tecmambo_glossary",
+    "title": "tecMAMBO Glossary Fields",
+    "show_in_graphql": true,
+    "graphql_field_name": "glossaryFields",
+    "fields": [
+      { "key": "field_glossary_one_liner", "label": "One-liner", "name": "one_liner", "type": "text", "required": 1, "instructions": "Plain-English answer-ready definition, ideally under 30 words." },
+      { "key": "field_glossary_pronunciation", "label": "Pronunciation", "name": "pronunciation", "type": "text" },
+      {
+        "key": "field_glossary_aliases",
+        "label": "Aliases",
+        "name": "aliases",
+        "type": "repeater",
+        "sub_fields": [
+          { "key": "field_glossary_alias", "label": "Alias", "name": "alias", "type": "text" }
+        ]
+      },
+      { "key": "field_glossary_analogy", "label": "Analogy", "name": "analogy", "type": "textarea", "instructions": "Optional everyday metaphor. Start with Think of it like only when it helps." },
+      { "key": "field_glossary_full_explanation", "label": "Full explanation", "name": "full_explanation", "type": "wysiwyg" },
+      { "key": "field_glossary_why_it_matters", "label": "Why it matters", "name": "why_it_matters", "type": "textarea" },
+      {
+        "key": "field_glossary_not_confuse",
+        "label": "Not to be confused with",
+        "name": "not_to_confuse_with",
+        "type": "relationship",
+        "post_type": ["glossary"]
+      },
+      {
+        "key": "field_glossary_related_terms",
+        "label": "Related terms",
+        "name": "related_terms",
+        "type": "relationship",
+        "post_type": ["glossary"]
+      },
+      {
+        "key": "field_glossary_difficulty",
+        "label": "Difficulty",
+        "name": "difficulty",
+        "type": "select",
+        "choices": {
+          "Everyday": "Everyday",
+          "Getting technical": "Getting technical",
+          "Deep cut": "Deep cut"
+        },
+        "default_value": "Everyday"
+      },
+      {
+        "key": "field_glossary_faqs",
+        "label": "FAQs",
+        "name": "faqs",
+        "type": "repeater",
+        "sub_fields": [
+          { "key": "field_glossary_faq_question", "label": "Question", "name": "question", "type": "text" },
+          { "key": "field_glossary_faq_answer", "label": "Answer", "name": "answer", "type": "textarea" }
+        ]
+      },
+      { "key": "field_glossary_featured", "label": "Featured", "name": "featured", "type": "true_false" },
+      { "key": "field_glossary_term_of_day", "label": "Term of the day", "name": "term_of_day", "type": "date_picker" },
+      {
+        "key": "field_glossary_sources",
+        "label": "Sources",
+        "name": "sources",
+        "type": "repeater",
+        "sub_fields": [
+          { "key": "field_glossary_source_label", "label": "Label", "name": "label", "type": "text" },
+          { "key": "field_glossary_source_url", "label": "URL", "name": "url", "type": "url" }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "glossary"
+        }
+      ]
+    ],
+    "active": true,
+    "show_in_graphql": true
+  }
+]

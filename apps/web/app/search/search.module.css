@@ -1,0 +1,66 @@
+.page {
+  padding-top: 52px;
+}
+
+.header p,
+.searchBox label {
+  margin: 0 0 8px;
+  color: var(--purple-dark);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.header h1 {
+  margin: 0 0 24px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.searchBox {
+  display: grid;
+  gap: 14px;
+  max-width: 820px;
+}
+
+.searchBox input {
+  min-height: 52px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0 14px;
+}
+
+.results {
+  display: grid;
+  gap: 12px;
+}
+
+.results a {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 16px;
+}
+
+.results span {
+  color: var(--purple-dark);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.results strong {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.results p,
+.empty {
+  margin: 4px 0 0;
+  color: var(--text-secondary);
+}

@@ -1,0 +1,54 @@
+{
+  "wordpress": {
+    "recommended_private_host": "https://cms.tecmambo.com",
+    "public_frontend": "https://tecmambo.com"
+  },
+  "required_plugins": [
+    {
+      "name": "WPGraphQL",
+      "version": "2.x",
+      "purpose": "GraphQL API for published content, previews, users, media, and taxonomies."
+    },
+    {
+      "name": "Advanced Custom Fields Pro",
+      "version": "6.x",
+      "purpose": "Editorial field groups for articles, glossary, homepage, legal pages, advertise, and site settings."
+    },
+    {
+      "name": "WPGraphQL for ACF",
+      "version": "2.x",
+      "purpose": "Expose ACF field groups to WPGraphQL."
+    },
+    {
+      "name": "Yoast SEO",
+      "version": "latest stable",
+      "purpose": "Editor-managed title, description, canonical, and Open Graph metadata."
+    },
+    {
+      "name": "Add WPGraphQL SEO",
+      "version": "latest stable",
+      "purpose": "Expose Yoast SEO fields through WPGraphQL."
+    },
+    {
+      "name": "WPGraphQL Smart Cache",
+      "version": "latest stable compatible with WPGraphQL 2.x",
+      "purpose": "Persisted operations, object cache integration, and API performance."
+    },
+    {
+      "name": "Redis Object Cache",
+      "version": "latest stable",
+      "purpose": "Back WordPress object caching with Redis on the managed host."
+    },
+    {
+      "name": "tecMAMBO Headless Helper",
+      "version": "1.0.0",
+      "purpose": "Disable public theme traffic, provide preview links, and call Next.js revalidation webhooks."
+    }
+  ],
+  "optional_alternatives": [
+    {
+      "name": "Rank Math SEO plus a WPGraphQL bridge",
+      "note": "Use only if the editorial team chooses Rank Math instead of Yoast. Keep the frontend SEO mapper aligned."
+    }
+  ]
+}

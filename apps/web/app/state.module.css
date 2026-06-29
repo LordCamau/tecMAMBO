@@ -1,0 +1,42 @@
+.state {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  width: min(100% - 32px, 680px);
+  margin: 90px auto;
+  text-align: center;
+}
+
+.state p {
+  margin: 0;
+  color: var(--purple-dark);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.state h1 {
+  margin: 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.state span {
+  color: var(--text-secondary);
+}
+
+.state div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.state a {
+  border-radius: var(--radius-sm);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-fg);
+  padding: 10px 14px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}

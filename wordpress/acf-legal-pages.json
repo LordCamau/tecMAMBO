@@ -1,0 +1,86 @@
+[
+  {
+    "key": "group_tecmambo_legal_page",
+    "title": "tecMAMBO Legal and Policy Page Fields",
+    "show_in_graphql": true,
+    "graphql_field_name": "legalPageFields",
+    "fields": [
+      {
+        "key": "field_legal_last_updated",
+        "label": "Last updated",
+        "name": "last_updated",
+        "type": "date_picker",
+        "required": 1,
+        "instructions": "Displayed at the top of the legal or policy page and used for structured data."
+      },
+      {
+        "key": "field_legal_summary",
+        "label": "Short version summary",
+        "name": "summary",
+        "type": "textarea",
+        "required": 1,
+        "instructions": "Rendered inside the lavender summary callout. Do not use em dashes. Brand casing must be tecMAMBO. For Editorial standards, make sure the copy reflects actual newsroom practice."
+      },
+      {
+        "key": "field_legal_body",
+        "label": "Legal body",
+        "name": "body",
+        "type": "wysiwyg",
+        "required": 1,
+        "instructions": "Use h2 headings for numbered sections so the table of contents can be generated. Do not use em dashes. Brand casing must be tecMAMBO. Editorial standards are a trust document, not legal advice."
+      },
+      {
+        "key": "field_legal_placeholders",
+        "label": "Complete before publishing",
+        "name": "placeholders",
+        "type": "repeater",
+        "button_label": "Add placeholder",
+        "instructions": "Track bracketed placeholders that must be completed before launch. Editorial standards placeholders include effective date, editorial contact email, legal entity name, and registered address.",
+        "sub_fields": [
+          {
+            "key": "field_legal_placeholder_label",
+            "label": "Placeholder",
+            "name": "placeholder",
+            "type": "text"
+          }
+        ]
+      },
+      {
+        "key": "field_legal_cookie_fallback_table",
+        "label": "Fallback cookie table",
+        "name": "cookie_fallback_table",
+        "type": "repeater",
+        "instructions": "Use only if the consent platform cannot render a live cookie list. Review this table whenever tags, ads, analytics, or embeds change.",
+        "button_label": "Add cookie",
+        "sub_fields": [
+          { "key": "field_legal_cookie_category", "label": "Category", "name": "category", "type": "text" },
+          { "key": "field_legal_cookie_name", "label": "Name", "name": "name", "type": "text" },
+          { "key": "field_legal_cookie_provider", "label": "Provider", "name": "provider", "type": "text" },
+          { "key": "field_legal_cookie_purpose", "label": "Purpose", "name": "purpose", "type": "textarea" },
+          { "key": "field_legal_cookie_duration", "label": "Duration", "name": "duration", "type": "text" },
+          {
+            "key": "field_legal_cookie_party",
+            "label": "Party",
+            "name": "party",
+            "type": "select",
+            "choices": {
+              "first-party": "First-party",
+              "third-party": "Third-party"
+            }
+          }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "legal"
+        }
+      ]
+    ],
+    "active": true,
+    "show_in_graphql": true
+  }
+]

@@ -1,0 +1,96 @@
+[
+  {
+    "key": "group_tecmambo_homepage",
+    "title": "tecMAMBO Homepage",
+    "show_in_graphql": true,
+    "graphql_field_name": "homepageFields",
+    "fields": [
+      {
+        "key": "field_home_hero_article",
+        "label": "Hero article",
+        "name": "hero_article",
+        "type": "relationship",
+        "post_type": ["post"],
+        "max": 1
+      },
+      {
+        "key": "field_home_hero_fallback",
+        "label": "Hero fallback",
+        "name": "hero_fallback",
+        "type": "select",
+        "choices": {
+          "latest_in_section": "Latest in section",
+          "latest_featured": "Latest featured"
+        },
+        "default_value": "latest_featured"
+      },
+      {
+        "key": "field_home_latest_rail",
+        "label": "Latest rail",
+        "name": "latest_rail",
+        "type": "relationship",
+        "post_type": ["post"],
+        "max": 5,
+        "instructions": "Optional pinned list. Leave empty to auto-fill by recency."
+      },
+      {
+        "key": "field_home_lanes",
+        "label": "Homepage lanes",
+        "name": "lanes",
+        "type": "repeater",
+        "button_label": "Add lane",
+        "sub_fields": [
+          { "key": "field_home_lane_key", "label": "Key", "name": "key", "type": "text" },
+          { "key": "field_home_lane_title", "label": "Title", "name": "title", "type": "text" },
+          { "key": "field_home_lane_eyebrow", "label": "Eyebrow", "name": "eyebrow", "type": "text" },
+          { "key": "field_home_lane_enabled", "label": "Enabled", "name": "enabled", "type": "true_false", "default_value": 1 },
+          { "key": "field_home_lane_order", "label": "Order", "name": "order", "type": "number" },
+          {
+            "key": "field_home_lane_layout",
+            "label": "Layout",
+            "name": "layout",
+            "type": "select",
+            "choices": { "grid": "Grid", "feature": "Feature" },
+            "default_value": "grid"
+          },
+          {
+            "key": "field_home_lane_featured_article",
+            "label": "Featured article",
+            "name": "featured_article",
+            "type": "relationship",
+            "post_type": ["post"],
+            "max": 1
+          },
+          { "key": "field_home_lane_source", "label": "Source", "name": "source", "type": "text" },
+          { "key": "field_home_lane_count", "label": "Count", "name": "count", "type": "number", "default_value": 3, "max": 4 }
+        ]
+      },
+      {
+        "key": "field_home_glossary_spotlight",
+        "label": "Glossary spotlight",
+        "name": "glossary_spotlight",
+        "type": "relationship",
+        "post_type": ["glossary"],
+        "max": 3
+      },
+      {
+        "key": "field_home_promo_partner",
+        "label": "Promo partner",
+        "name": "promo_partner",
+        "type": "post_object",
+        "post_type": ["ad_unit"],
+        "allow_null": 1
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "options_page",
+          "operator": "==",
+          "value": "tecmambo-homepage"
+        }
+      ]
+    ],
+    "active": true
+  }
+]

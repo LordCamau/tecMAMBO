@@ -1,0 +1,170 @@
+[
+  {
+    "key": "group_tecmambo_advertise",
+    "title": "tecMAMBO Advertise Page",
+    "show_in_graphql": true,
+    "graphql_field_name": "advertiseFields",
+    "fields": [
+      {
+        "key": "field_advertise_hero_eyebrow",
+        "label": "Hero eyebrow",
+        "name": "hero_eyebrow",
+        "type": "text",
+        "default_value": "ADVERTISE WITH tecMAMBO"
+      },
+      {
+        "key": "field_advertise_hero_title",
+        "label": "Hero title",
+        "name": "hero_title",
+        "type": "text",
+        "default_value": "Reach people at the moment they are trying to understand tech."
+      },
+      {
+        "key": "field_advertise_hero_sub",
+        "label": "Hero sub",
+        "name": "hero_sub",
+        "type": "textarea",
+        "default_value": "tecMAMBO is where everyday people and curious enthusiasts come to make sense of technology, and to decide what to buy. Put your brand in that moment, in a place readers actually trust."
+      },
+      {
+        "key": "field_advertise_audience_stats",
+        "label": "Audience stats",
+        "name": "audience_stats",
+        "type": "repeater",
+        "instructions": "Each stat is optional. Leave value empty until the current number is verified. Empty stats do not render.",
+        "button_label": "Add stat",
+        "sub_fields": [
+          { "key": "field_advertise_stat_label", "label": "Label", "name": "label", "type": "text" },
+          { "key": "field_advertise_stat_value", "label": "Verified value", "name": "value", "type": "text" },
+          { "key": "field_advertise_stat_note", "label": "Note", "name": "note", "type": "text" }
+        ]
+      },
+      {
+        "key": "field_advertise_pillars",
+        "label": "Value pillars",
+        "name": "pillars",
+        "type": "repeater",
+        "button_label": "Add pillar",
+        "sub_fields": [
+          { "key": "field_advertise_pillar_title", "label": "Title", "name": "title", "type": "text" },
+          { "key": "field_advertise_pillar_body", "label": "Body", "name": "body", "type": "textarea" }
+        ]
+      },
+      {
+        "key": "field_advertise_offerings",
+        "label": "Ways to work with us",
+        "name": "offerings",
+        "type": "repeater",
+        "button_label": "Add offering",
+        "sub_fields": [
+          { "key": "field_advertise_offering_title", "label": "Title", "name": "title", "type": "text" },
+          { "key": "field_advertise_offering_body", "label": "Body", "name": "body", "type": "textarea" }
+        ]
+      },
+      {
+        "key": "field_advertise_faq",
+        "label": "FAQ",
+        "name": "faq",
+        "type": "repeater",
+        "button_label": "Add FAQ",
+        "sub_fields": [
+          { "key": "field_advertise_faq_question", "label": "Question", "name": "question", "type": "text" },
+          { "key": "field_advertise_faq_answer", "label": "Answer", "name": "answer", "type": "textarea" }
+        ]
+      },
+      {
+        "key": "field_advertise_partner_assets",
+        "label": "Partner logos and testimonials",
+        "name": "partner_assets",
+        "type": "repeater",
+        "instructions": "Leave empty until real partner logos or approved testimonials exist.",
+        "button_label": "Add partner asset",
+        "sub_fields": [
+          { "key": "field_advertise_partner_name", "label": "Partner name", "name": "name", "type": "text" },
+          { "key": "field_advertise_partner_logo", "label": "Logo", "name": "logo", "type": "image" },
+          { "key": "field_advertise_partner_quote", "label": "Quote", "name": "quote", "type": "textarea" }
+        ]
+      },
+      {
+        "key": "field_advertise_media_kit",
+        "label": "Media kit file",
+        "name": "media_kit_file",
+        "type": "file",
+        "instructions": "Upload the current PDF media kit. The frontend fallback route is used until this is populated."
+      },
+      {
+        "key": "field_advertise_media_kit_specifications",
+        "label": "Media kit specifications",
+        "name": "media_kit_specifications",
+        "type": "repeater",
+        "instructions": "Editable specification rows for the PDF. Leave unverified rows empty until confirmed on booking.",
+        "button_label": "Add specification",
+        "sub_fields": [
+          { "key": "field_advertise_media_kit_spec_label", "label": "Label", "name": "label", "type": "text" },
+          { "key": "field_advertise_media_kit_spec_value", "label": "Value", "name": "value", "type": "textarea" }
+        ]
+      },
+      {
+        "key": "field_advertise_media_kit_rate_guide",
+        "label": "Media kit rate guide",
+        "name": "media_kit_rate_guide",
+        "type": "repeater",
+        "instructions": "Editable rate-guide rows for the PDF. Use 'Available on request' until a rate is approved.",
+        "button_label": "Add rate row",
+        "sub_fields": [
+          { "key": "field_advertise_media_kit_rate_label", "label": "Label", "name": "label", "type": "text" },
+          { "key": "field_advertise_media_kit_rate_value", "label": "Value", "name": "value", "type": "text" }
+        ]
+      },
+      {
+        "key": "field_advertise_media_kit_contact_block",
+        "label": "Media kit contact block",
+        "name": "media_kit_contact_block",
+        "type": "group",
+        "instructions": "Contact details used on the media kit contact page.",
+        "sub_fields": [
+          { "key": "field_advertise_media_kit_contact_email", "label": "Partnerships email", "name": "partnerships_email", "type": "email" },
+          { "key": "field_advertise_media_kit_contact_website", "label": "Website", "name": "website", "type": "url" },
+          { "key": "field_advertise_media_kit_contact_phone", "label": "Phone optional", "name": "phone", "type": "text" },
+          { "key": "field_advertise_media_kit_contact_social", "label": "Social handles", "name": "social_handles", "type": "text" },
+          { "key": "field_advertise_media_kit_contact_schedule", "label": "Scheduling link optional", "name": "scheduling_link", "type": "url" }
+        ]
+      },
+      {
+        "key": "field_advertise_contact_settings",
+        "label": "Contact and routing settings",
+        "name": "contact_settings",
+        "type": "group",
+        "sub_fields": [
+          { "key": "field_advertise_email", "label": "Advertising email", "name": "advertising_email", "type": "email" },
+          { "key": "field_advertise_inbox", "label": "Partnerships inbox", "name": "partnerships_inbox", "type": "email" },
+          { "key": "field_advertise_response_time", "label": "Response time", "name": "response_time", "type": "text", "default_value": "two business days" },
+          { "key": "field_advertise_scheduling_link", "label": "Scheduling link", "name": "scheduling_link", "type": "url" },
+          { "key": "field_advertise_currency", "label": "Currency", "name": "currency", "type": "text", "default_value": "USD" },
+          { "key": "field_advertise_crm_notes", "label": "CRM or email integration notes", "name": "crm_notes", "type": "textarea" }
+        ]
+      },
+      {
+        "key": "field_advertise_budget_ranges",
+        "label": "Budget ranges",
+        "name": "budget_ranges",
+        "type": "repeater",
+        "button_label": "Add budget range",
+        "sub_fields": [
+          { "key": "field_advertise_budget_label", "label": "Label", "name": "label", "type": "text" }
+        ]
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "options_page",
+          "operator": "==",
+          "value": "tecmambo-advertise"
+        }
+      ]
+    ],
+    "active": true,
+    "show_in_graphql": true
+  }
+]

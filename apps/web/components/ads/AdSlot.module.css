@@ -1,0 +1,14 @@
+.slot {
+  display: grid;
+  place-items: center;
+  min-height: 250px;
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  color: var(--text-muted);
+}
+
+.slot span {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+}

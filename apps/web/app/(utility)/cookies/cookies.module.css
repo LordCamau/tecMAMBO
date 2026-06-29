@@ -1,0 +1,33 @@
+.controls {
+  display: grid;
+  gap: 16px;
+  border: 1px solid var(--why-border);
+  border-radius: var(--radius-md);
+  background: var(--why-bg);
+  padding: 18px;
+  scroll-margin-top: 94px;
+}
+
+.controls p {
+  margin: 0 0 6px;
+  color: var(--why-heading);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.controls h2 {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.controls span {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.62;
+}

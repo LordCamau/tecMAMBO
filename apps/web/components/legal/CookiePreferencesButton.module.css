@@ -1,0 +1,45 @@
+.wrap,
+.compactWrap {
+  display: grid;
+  gap: 8px;
+}
+
+.button,
+.compactButton {
+  width: fit-content;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-fg);
+  cursor: pointer;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.button {
+  padding: 11px 14px;
+}
+
+.compactButton {
+  border: 1px solid transparent;
+  background: var(--white);
+  color: var(--ink);
+  padding: 9px 11px;
+}
+
+.button:hover,
+.compactButton:hover {
+  filter: brightness(1.03);
+}
+
+.message,
+.compactMessage {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.compactMessage {
+  max-width: 260px;
+  color: rgba(244, 242, 250, 0.78);
+}

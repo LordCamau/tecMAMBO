@@ -1,0 +1,83 @@
+[
+  {
+    "key": "group_tecmambo_region_taxonomy",
+    "title": "tecMAMBO Region term fields",
+    "show_in_graphql": true,
+    "graphql_field_name": "regionFields",
+    "fields": [
+      {
+        "key": "field_region_group",
+        "label": "Region group",
+        "name": "region_group",
+        "type": "select",
+        "choices": {
+          "Africa": "Africa",
+          "Global": "Global"
+        },
+        "default_value": "Africa",
+        "instructions": "Group countries under Africa now, with room for other global regions later."
+      },
+      {
+        "key": "field_region_description",
+        "label": "Short hub description",
+        "name": "region_description",
+        "type": "textarea",
+        "instructions": "Answer-ready description for the country hub and schema."
+      },
+      {
+        "key": "field_region_flag",
+        "label": "Country code or flag label",
+        "name": "region_flag",
+        "type": "text",
+        "instructions": "Use a stable country code such as KE, NG, ZA, or RW."
+      },
+      {
+        "key": "field_region_icon",
+        "label": "Optional icon",
+        "name": "region_icon",
+        "type": "text"
+      },
+      {
+        "key": "field_region_hero_image",
+        "label": "Optional hub hero image",
+        "name": "region_hero_image",
+        "type": "image"
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "taxonomy",
+          "operator": "==",
+          "value": "region"
+        }
+      ]
+    ],
+    "active": true,
+    "show_in_graphql": true
+  },
+  {
+    "key": "group_tecmambo_article_region_guidance",
+    "title": "tecMAMBO Article region guidance",
+    "fields": [
+      {
+        "key": "field_article_region_note",
+        "label": "Region tagging guidance",
+        "name": "article_region_note",
+        "type": "message",
+        "message": "Tag the country or countries this story is about or especially useful to. Leave global stories untagged. Region is cross-cutting and does not change the article URL."
+      }
+    ],
+    "location": [
+      [
+        {
+          "param": "post_type",
+          "operator": "==",
+          "value": "post"
+        }
+      ]
+    ],
+    "active": true,
+    "show_in_graphql": true
+  }
+]

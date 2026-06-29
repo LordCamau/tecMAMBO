@@ -1,0 +1,37 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid color-mix(in srgb, var(--purple) 46%, var(--line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--purple) 12%, var(--surface));
+  color: var(--purple-dark);
+  padding: 5px 10px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.chip:hover {
+  border-color: var(--purple);
+  background: var(--purple);
+  color: var(--white);
+}
+
+:global(.dark) .chip {
+  border-color: color-mix(in srgb, var(--purple) 65%, var(--line));
+  background: color-mix(in srgb, var(--purple) 24%, var(--surface));
+  color: #f0e6ff;
+}
+
+:global(.dark) .chip:hover {
+  background: var(--purple);
+  color: var(--white);
+}

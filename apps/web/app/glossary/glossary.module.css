@@ -1,0 +1,404 @@
+.page,
+.termPage {
+  padding-top: 52px;
+}
+
+.header {
+  max-width: 780px;
+  margin-bottom: 28px;
+}
+
+.header p,
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--purple-dark);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.header h1,
+.termHero h1 {
+  margin: 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+.header span,
+.termHero > span,
+.aliases,
+.metaLine,
+.empty p,
+.termPage p {
+  color: var(--text-secondary);
+}
+
+.termOfDay {
+  display: grid;
+  gap: 10px;
+  max-width: 760px;
+  margin-bottom: 26px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+.termOfDay small,
+.termCard small,
+.pill,
+.sourceList span {
+  width: fit-content;
+  border-radius: 999px;
+  border: 1px solid var(--pill-border);
+  background: var(--pill-bg);
+  color: var(--pill-fg);
+  padding: 5px 9px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.termOfDay strong {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.searchBlock {
+  display: grid;
+  gap: 24px;
+}
+
+.searchPanel {
+  display: grid;
+  gap: 10px;
+  max-width: 860px;
+}
+
+.searchPanel label,
+.suggest label {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.searchPanel input,
+.suggest input {
+  min-height: 54px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0 15px;
+}
+
+.controls {
+  display: grid;
+  gap: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 18px;
+}
+
+.controls p {
+  margin: 0 0 10px;
+  color: var(--text-muted);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.chipRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chipRow button,
+.suggest button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.chipRow button[aria-pressed="true"],
+.suggest button {
+  border-color: var(--button-primary-bg);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-fg);
+}
+
+.azBar {
+  position: sticky;
+  top: 74px;
+  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--bg) 94%, transparent);
+  padding: 10px;
+  backdrop-filter: blur(14px);
+}
+
+.azBar a {
+  display: grid;
+  place-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: var(--radius-sm);
+  color: var(--purple-dark);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.azBar a:hover,
+.azBar a:focus-visible {
+  background: var(--pill-bg);
+  color: var(--pill-fg);
+}
+
+.library {
+  display: grid;
+  gap: 34px;
+}
+
+.letterGroup {
+  scroll-margin-top: 140px;
+}
+
+.letterGroup h2,
+.rails h2,
+.suggest h2,
+.sectionTitle,
+.termSection h2 {
+  margin: 0 0 14px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.termGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.termCard {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 178px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 18px;
+}
+
+.termCard > span {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.termCard p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.empty {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 22px;
+}
+
+.empty strong {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.rails {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.rails section,
+.suggest {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 18px;
+}
+
+.rails a {
+  border-top: 1px solid var(--line);
+  padding-top: 10px;
+  color: var(--purple-dark);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.suggest button {
+  width: fit-content;
+  border-radius: var(--radius-sm);
+}
+
+.suggest p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: var(--purple-dark);
+}
+
+.termHero {
+  display: grid;
+  gap: 14px;
+}
+
+.topicRow,
+.relatedTerms,
+.pageActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.topicRow a,
+.relatedTerms a,
+.pageActions a,
+.copyButton {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--purple-dark);
+  padding: 7px 11px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.oneLiner {
+  margin: 24px 0 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 24px;
+  color: var(--text);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: clamp(25px, 3vw, 34px);
+  line-height: 1.18;
+}
+
+.analogy {
+  margin: 22px 0;
+  border-left: 4px solid var(--purple);
+  padding-left: 18px;
+}
+
+.analogy strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--purple-dark);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.termSection,
+.confusable,
+.askMambo,
+.appearsIn,
+.sourceList {
+  margin-top: 30px;
+}
+
+.confusable {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 18px;
+}
+
+.faq {
+  display: grid;
+  gap: 10px;
+}
+
+.faq details {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: 14px;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.appearsGrid {
+  display: grid;
+  gap: 12px;
+}
+
+.appearsGrid a {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: 14px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.askMambo {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--why-bg);
+  padding: 20px;
+}
+
+.copyButton {
+  cursor: pointer;
+}
+
+.sourceList {
+  display: grid;
+  gap: 8px;
+}
+
+.sourceList a {
+  color: var(--purple-dark);
+}
+
+@media (max-width: 900px) {
+  .termGrid,
+  .rails {
+    grid-template-columns: 1fr;
+  }
+}

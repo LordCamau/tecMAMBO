@@ -1,0 +1,26 @@
+.page {
+  padding-top: 64px;
+}
+
+.page p {
+  margin: 0 0 8px;
+  color: var(--purple-dark);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.page h1,
+.page h2 {
+  margin: 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.page span {
+  display: block;
+  margin-top: 18px;
+  color: var(--text-secondary);
+  font-size: 19px;
+}

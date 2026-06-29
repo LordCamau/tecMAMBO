@@ -1,0 +1,35 @@
+.wordmark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 174px;
+  max-width: 42vw;
+  aspect-ratio: 1146.43 / 293.12;
+  line-height: 0;
+}
+
+.logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.logoDark {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+:global(.dark) .logoLight {
+  opacity: 0;
+}
+
+:global(.dark) .logoDark {
+  opacity: 1;
+}
+
+@media (max-width: 460px) {
+  .wordmark {
+    width: 138px;
+  }
+}

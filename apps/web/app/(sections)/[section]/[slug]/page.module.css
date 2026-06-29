@@ -1,0 +1,360 @@
+.article {
+  padding-top: 42px;
+}
+
+.header {
+  display: grid;
+  gap: 18px;
+}
+
+.kickerRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.kickerRow a {
+  color: var(--purple-dark);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.header h1 {
+  margin: 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: clamp(36px, 6vw, 58px);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
+.subhead {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+.byline a {
+  color: var(--purple-dark);
+}
+
+.leadImage {
+  position: relative;
+  width: min(100% - 32px, 1040px);
+  min-height: 520px;
+  margin: 34px auto 36px;
+  overflow: clip;
+  border-radius: var(--radius-md);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-soft);
+}
+
+.leadImage img {
+  object-fit: cover;
+}
+
+.leadImage figcaption {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--surface) 86%, transparent);
+  padding: 4px 8px;
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.body {
+  display: grid;
+  gap: 24px;
+}
+
+.body > p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.body h2,
+.body h3 {
+  margin: 18px 0 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.body h2 {
+  font-size: clamp(26px, 4vw, 34px);
+}
+
+.body h3 {
+  font-size: 22px;
+}
+
+.inlineGlossary {
+  border-bottom: 1px solid var(--purple);
+  color: var(--purple-dark);
+  font-size: 15px;
+}
+
+.closingLine {
+  border-left: 4px solid var(--orange);
+  padding-left: 16px;
+  color: var(--text-secondary);
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+.disclosure {
+  width: fit-content;
+  border: 1px solid var(--pill-border);
+  border-radius: 999px;
+  background: var(--pill-bg);
+  color: var(--pill-fg);
+  padding: 5px 9px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.affiliateDisclosure {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  padding: 12px 14px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.dealBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  border: 1px solid color-mix(in srgb, var(--orange) 50%, var(--line));
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--orange) 14%, var(--surface));
+  padding: 18px;
+}
+
+.dealBox p {
+  margin: 0 0 6px;
+  color: var(--price-fg);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+}
+
+.dealBox h2 {
+  margin: 0 0 8px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.dealBox span {
+  display: inline-flex;
+  border-radius: 999px;
+  background: var(--price-bg);
+  color: var(--price-fg);
+  padding: 6px 10px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 13px;
+}
+
+.dealBox del,
+.dealBox small {
+  margin-left: 8px;
+  color: var(--text-muted);
+}
+
+.dealBox a {
+  flex: 0 0 auto;
+  border-radius: var(--radius-sm);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-fg);
+  padding: 10px 14px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.verdict {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 20px;
+}
+
+.score {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  margin: 0;
+  border-radius: 50%;
+  background: var(--button-primary-bg);
+  color: var(--button-primary-fg);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 24px;
+}
+
+.verdict h2,
+.ask h2,
+.related h2 {
+  margin: 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.verdict p {
+  margin: 6px 0 0;
+  color: var(--text-secondary);
+}
+
+.proCon {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ask {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 22px;
+}
+
+.faq {
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 22px;
+}
+
+.faq h2 {
+  margin: 0 0 4px;
+}
+
+.faq details {
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+.faq summary {
+  cursor: pointer;
+  color: var(--text);
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.faq p {
+  margin: 10px 0 0;
+  color: var(--text-secondary);
+}
+
+.ask p {
+  margin: 8px 0 16px;
+  color: var(--text-secondary);
+}
+
+.ask a {
+  display: inline-flex;
+  border-radius: var(--radius-sm);
+  background: var(--button-primary-bg);
+  color: var(--button-primary-fg);
+  padding: 10px 14px;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 500;
+}
+
+.related,
+.newsletter {
+  margin-top: 60px;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 18px;
+}
+
+.topicArchive {
+  padding-top: 52px;
+}
+
+.topicHeader {
+  max-width: 720px;
+  margin-bottom: 24px;
+}
+
+.topicHeader p {
+  margin: 0 0 8px;
+  color: var(--purple-dark);
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.topicHeader h1 {
+  margin: 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 1.05;
+}
+
+.topicHeader span {
+  display: block;
+  margin-top: 12px;
+  color: var(--text-secondary);
+}
+
+.wearableTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.wearableTabs a {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  padding: 8px 12px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 12px;
+}
+
+.wearableTabs a[aria-current="page"] {
+  border-color: var(--pill-border);
+  background: var(--pill-bg);
+  color: var(--pill-fg);
+}
+
+@media (max-width: 760px) {
+  .leadImage {
+    min-height: 340px;
+  }
+
+  .verdict,
+  .proCon,
+  .dealBox,
+  .relatedGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dealBox {
+    align-items: start;
+    flex-direction: column;
+  }
+}

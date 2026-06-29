@@ -1,0 +1,59 @@
+.badge.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  border: 1px solid var(--badge-border, transparent);
+  border-radius: 999px;
+  background: var(--badge-bg);
+  color: var(--badge-fg);
+  padding: 6px 10px;
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.mark {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 9px solid currentColor;
+}
+
+.badge.badge .mark {
+  color: inherit;
+}
+
+.explains {
+  --badge-bg: var(--badge-explains-bg);
+  --badge-fg: var(--badge-explains-fg);
+}
+
+.wallet {
+  --badge-bg: var(--badge-wallet-bg);
+  --badge-fg: var(--badge-wallet-fg);
+}
+
+.realLife {
+  --badge-bg: var(--badge-reallife-bg);
+  --badge-fg: var(--badge-reallife-fg);
+}
+
+.care {
+  --badge-bg: var(--badge-news-bg);
+  --badge-fg: var(--badge-news-fg);
+}
+
+.take {
+  --badge-bg: var(--badge-take-bg);
+  --badge-fg: var(--badge-take-fg);
+  --badge-border: var(--badge-take-border);
+}
+
+.review {
+  --badge-bg: var(--badge-review-bg);
+  --badge-fg: var(--badge-review-fg);
+  --badge-border: var(--badge-review-border);
+}
